@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#' gives factorial of n\n#' based on a simple fortran function \\code{faculty} calculates the factorial of n.\n#' @export\n\nfacto <- function(n, type = c(\"Fortran\", \"R\")) {\n  type <- match.arg(type)\n\n  if(type == \"Fortran\") {\n    out <- .Fortran(\n      \"facto\",\n      n = as.integer(n),\n      answer = as.integer(1),\n      PACKAGE = \"testFortran\"\n    )$answer\n  }\n\n  if(type == \"R\") {\n    out <- factorial(n)\n  }\n\n  return(out)\n}\n",
+    "created" : 1515760236420.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4042418578",
+    "id" : "D643B44C",
+    "lastKnownWriteTime" : 1515770242,
+    "last_content_update" : 1515770242892,
+    "path" : "H:/FVA-Projekte/P01479_HE_VSB/Programme/Eigenentwicklung/RCode/testFortran/R/faculty.R",
+    "project_path" : "R/faculty.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

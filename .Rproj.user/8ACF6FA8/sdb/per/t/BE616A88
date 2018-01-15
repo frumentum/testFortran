@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n      subroutine square(x, n)\n\n      integer i\n      integer n\n      double precision x(n)\n\n      do 10 i = 1, n\n          x(i) = x(i) ** 2\n   10 continue\n\n      end\n\n",
+    "created" : 1515767139146.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "535861454",
+    "id" : "BE616A88",
+    "lastKnownWriteTime" : 1515768260,
+    "last_content_update" : 1515768260454,
+    "path" : "H:/FVA-Projekte/P01479_HE_VSB/Programme/Eigenentwicklung/RCode/testFortran/src/square.f",
+    "project_path" : "src/square.f",
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}

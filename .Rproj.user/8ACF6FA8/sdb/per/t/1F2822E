@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "        subroutine facto(n,answer)\nc\nc simple subroutine to compute factorial\nc\n        integer n, answer, i\n \n        answer = 1\n        do 100 i = 2,n\n           answer = answer * i\n  100   continue \n         \n        end",
+    "created" : 1515769658778.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "929302363",
+    "id" : "1F2822E",
+    "lastKnownWriteTime" : 1515761356,
+    "last_content_update" : 1515761356,
+    "path" : "H:/FVA-Projekte/P01479_HE_VSB/Programme/Eigenentwicklung/RCode/testFortran/src/factorial.f",
+    "project_path" : "src/factorial.f",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}
