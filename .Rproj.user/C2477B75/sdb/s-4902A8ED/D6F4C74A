@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: testFortran\nType: Package\nTitle: test package which contains fortran source code\nVersion: 0.1.0\nAuthor: Simon Pöschl\nMaintainer: Simon Pöschl <Simon.Poeschl@forst.bwl.de>\nDescription: Just a test case...\nLicense: GPL-3\nEncoding: UTF-8\nLazyData: true\nRoxygenNote: 6.0.1\nSuggests: testthat\n",
+    "created" : 1516009138989.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1498284365",
+    "id" : "D6F4C74A",
+    "lastKnownWriteTime" : 1516009237,
+    "last_content_update" : -2147483648,
+    "path" : "H:/FVA-Projekte/P01479_HE_VSB/Programme/Eigenentwicklung/RCode/testFortran/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}

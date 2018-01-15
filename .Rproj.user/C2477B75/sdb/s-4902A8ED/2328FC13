@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#' @title squares number(s)\n#' @description\n#' based on a fortran subroutine or calculated in R, depending in type\n#' @param x single number or even a vector containing numerical values\n#' @param type character value: language which shall be used for calculating: 'Fortran' or 'R'\n#' @examples\n#' require(microbenchmark)\n#' microbenchmark(square(1:1000, type = \"Fortran\"), square(1:1000, type = \"R\"))\n#' @useDynLib testFortran\n#' @export\n\nsquare <- function(x, type = c(\"Fortran\", \"R\")) {\n  type <- match.arg(type)\n  stopifnot(is.numeric(x))\n\n  if(type == \"Fortran\") {\n    out <- .Fortran(\n      \"square\",\n      x = as.double(x),\n      n = length(x),\n      PACKAGE = \"testFortran\"\n    )$x\n  }\n\n  if(type == \"R\") {\n    out <- x*x\n  }\n\n  return(out)\n}\n",
+    "created" : 1516006679427.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "579834512",
+    "id" : "2328FC13",
+    "lastKnownWriteTime" : 1515770675,
+    "last_content_update" : 1515770675,
+    "path" : "H:/FVA-Projekte/P01479_HE_VSB/Programme/Eigenentwicklung/RCode/testFortran/R/square.R",
+    "project_path" : "R/square.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
